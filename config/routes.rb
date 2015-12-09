@@ -4,6 +4,10 @@ Rails.application.routes.draw do
 
   devise_for :students
   devise_for :families
+
+  get '/student_form', to: 'students#new'
+
+  post '/student_form', to: 'students#show'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
